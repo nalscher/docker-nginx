@@ -2,6 +2,7 @@ FROM nginx:alpine
 
 ENV APP_ROOT /var/www/html/web
 ENV APP_ENVIRONMENT production
+ENV APP_DEPLOY_ENV production
 ENV APP_REGION us1
 
 # Install needed library
