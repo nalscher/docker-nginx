@@ -5,9 +5,12 @@ ENV APP_ENVIRONMENT production
 ENV APP_DEPLOY_ENV production
 ENV APP_REGION us1
 
+ENV PUID 100
+ENV GUID 101 
+
 # Install needed library
 RUN apk add -v --update \
-    bash
+    bash shadow
 
 ADD default.conf /etc/nginx/conf.d/default.conf
 ADD start.sh /start.sh
