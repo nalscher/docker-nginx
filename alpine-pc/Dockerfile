@@ -5,8 +5,8 @@ ENV APP_ENVIRONMENT production
 ENV APP_DEPLOY_ENV production
 ENV APP_REGION us1
 
-ENV PUID 100
-ENV GUID 101 
+ENV PUID 1000
+ENV GUID 1000
 
 # Install needed library
 RUN apk add -v --update \
